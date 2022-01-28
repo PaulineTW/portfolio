@@ -484,15 +484,15 @@ img{
     background-color: var(--first-color);
 }
 
-.skills__laravel{
+.skills__rails{
     width: 80%;
 }
 
-.skills__django{
+/* .skills__django{
     width: 60%;
-}
+} */
 
-.skills__php{
+.skills__elixir{
     width: 80%;
 }
 
@@ -500,11 +500,11 @@ img{
     width: 70%;
 }
 
-.skills__react{
+.skills__html{
     width: 70%;
 }
 
-.skills__material{
+.skills__css{
     width: 60%;
 }
 
