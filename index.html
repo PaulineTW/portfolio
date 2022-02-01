@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!--==================== SWIPER CSS ====================-->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
   <!--==================== CSS ====================-->
   <link rel="stylesheet" href="assets/CSS/styles.css">
@@ -372,7 +372,7 @@
                 <!--===============================QUALIFICATION 3 ===========================-->
                 <div class="qualification__data">
                     <div>
-                        <h3 class="qualification__title">Management Tourism Industry Master</h3>
+                        <h3 class="qualification__title">Management Tourism Industry</h3>
                         <span class="qualification__subtitle">University of Quebec in Montreal (UQAM)</span>
                         <div class="qualification__calendar">
                             <i class="uil uil-calendar-alt"></i>
@@ -492,7 +492,7 @@
       </div>
     </div>
 
-    <!--===================== SERVICES 2 ====================-->
+    ===================== SERVICES 2 ====================
     <!-- <div class="services__content">
       <div>
         <i class="uil uil-web-grid services__icon"></i>
@@ -561,19 +561,104 @@
       </div>
     </div>
   </div>
-</section> --> 
+</section> -->
 
-    <!--==================== PORTFOLIO ====================-->
-    <section class="portfolio section" id="portfolio">
+  <!--==================== PORTFOLIO ====================-->
+  <section class="portfolio section" id="portfolio">
+    <h2 class="section__title">Portfolio</h2>
+    <span class="section__subtitle">Most Recent Project</span>
 
+    <div class="portfolio__container container swiper-container">
+      <div class="swiper-wrapper">
+        <!--======================== PORTFOLIO 1 =============-->
+        <div class="portfolio__content grid swiper-slide">
+          <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
 
-    </section>
+          <div class="portfolio__data">
+            <h3 class="portfolio__title">AusHello</h3>
+            <p class="portfolio__description">
+              Location based directory to connect refugees to find local resources in communities around Australia
+            </p>
+            <a href="https://www.aushello.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                Demo
+                <i class="uil uil-arrow-right button__icon"></i>
+            </a>
+            <a href="https://github.com/PaulineTW/AUSHELLO" target="_blank" class="button button--flex button--small portfolio__button">
+              Code
+              <i class="uil uil-github button__icon"></i>
+            </a>
+          </div>
+        </div>
 
-    <!--==================== PROJECT IN MIND ====================-->
-    <section class="project section">
+        <!--======================== PORTFOLIO 2 =============-->
+        <div class="portfolio__content grid swiper-slide">
+          <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">
 
+          <div class="portfolio__data">
+            <h3 class="portfolio__title">Private Kitchen</h3>
+            <p class="portfolio__description">
+                Platform designed to connect chefs with individual that can book private meals at home
+            </p>
+            <a href="http://privatekitchen.herokuapp.com/" target="_blank" class="button button--flex button--small portfolio__button">
+              Demo
+              <i class="uil uil-arrow-right button__icon"></i>
+          </a>
+            <a href="https://github.com/PaulineTW/private-kitchen" target="_blank" class="button button--flex button--small portfolio__button">
+              Code
+              <i class="uil uil-github button__icon"></i>
+            </a>
 
-    </section>
+          </div>
+        </div>
+
+        <!--======================== PORTFOLIO 3 =============-->
+        <!-- <div class="portfolio__content grid swiper-slide">
+            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+
+            <div class="portfolio__data">
+                <h3 class="portfolio__title">Modern Website(3)</h3>
+                <p class="portfolio__description">
+                    This is test description(3) right now.
+                </p>
+                <a href="#" class="button button--flex button--small portfolio__button">
+                    Demo
+                    <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+            </div>
+        </div> -->
+
+    </div>
+    <!--============ Add Arrows =============-->
+    <div class="swiper-button-next">
+        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+    </div>
+    <div class="swiper-button-prev">
+        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+    </div>
+
+    <!--============ Add Pagination =============-->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!--==================== PROJECT IN MIND ====================-->
+<!-- <section class="project section">
+    <div class="project__bg">
+        <div class="project__container container grid">
+            <div class="project__data">
+                <h2 class="project__title">You have a new project</h2>
+                <p class="project__description">Contact me now and get a 30% discount on your new project!</p>
+                <a href="#contact" class="button button--flex button--white">
+                    Contact Me
+                    <i class="uil uil-message project__icon button__icon"></i>
+                </a>
+            </div>
+
+            <img src="assets/img/project.png" alt="" class="project__img">
+        </div>
+    </div>
+</section> -->
+
 
     <!--==================== TESTIMONIAL ====================-->
     <section class="testimonial section">
@@ -595,10 +680,12 @@
   </footer>
 
   <!--==================== SCROLL TOP ====================-->
-
+  <a href="" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scroll__icon"></i>
+  </a>
 
   <!--==================== SWIPER JS ====================-->
-  <script src=""></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
 
   <!--==================== MAIN JS ====================-->
   <script src="assets/javascript/main.js"></script>
