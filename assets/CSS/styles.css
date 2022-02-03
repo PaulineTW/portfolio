@@ -452,10 +452,10 @@ img {
   font-size: var(--h3-font-size);
 }
 
-.skills__subtitle {
+/* .skills__subtitle {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
-}
+} */
 
 .skills__arrow {
   margin-left: auto;
@@ -492,7 +492,7 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
+/* .skills__html {
   width: 90%;
 }
 
@@ -505,34 +505,28 @@ img {
 }
 
 .skills__react {
-  width: 85%;
+  width: 85%; */
 }
 
-.skills__php {
-  width: 80%;
-}
 
-.skills__node {
+/* .skills__node {
   width: 70%;
 }
 
-.skills__firebase {
+.skills__rails {
+  width: 90%;
+} */
+
+
+/* .skills__bootstrap {
   width: 90%;
 }
 
-.skills__python {
-  width: 55%;
-}
+.skills__git {
+  width: 85%;
+} */
 
 .skills__figma {
-  width: 90%;
-}
-
-.skills__sketch {
-  width: 85%;
-}
-
-.skills__photoshop {
   width: 85%;
 }
 
