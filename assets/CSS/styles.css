@@ -3,6 +3,9 @@
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 23;
+  
   /*========== Colors ==========*/
   --hue-color: 166;
 
@@ -298,7 +301,69 @@ img {
 
 .home__title {
   font-size: var(--big-font-size);
+  position: relative;
+  width: max-content; 
 }
+
+/* typewriter animation  */
+
+.home__title::before,
+.home__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.home__title::before {
+  background: var(--body-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.home__title::after {
+  width: 0.125em;
+  background: var(--first-color);
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+      /* visibility: hidden  */
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #yt-link {
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+    color: hsl(0 0 0 / 0.7);
+  
+    &:hover,
+    &:focus {
+      color: teal;
+    }
+  }
+
+ /* end  */ 
 
 .home__subtitle {
   font-size: var(--h3-font-size);
@@ -526,9 +591,9 @@ img {
   width: 85%;
 } */
 
-.skills__figma {
+/* .skills__figma {
   width: 85%;
-}
+} */
 
 .skills__close .skills__list {
   height: 0px;
