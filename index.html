@@ -26,8 +26,9 @@
   <!--==================== HEADER ====================-->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo"><img src="assets/img/PR_logo.png" alt="PR Logo" style="width:50px;height:50px;"></a>
-
+      <a href="#" class="nav__logo">
+        <img src="assets/img/PR_logo.svg" id="svg" alt="PR Logo" style="width:50px;height:50px;">
+      </a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list grid">
           <li class="nav__item">
@@ -82,13 +83,13 @@
   <div class="home__container container grid">
     <div class="home__content grid">
       <div class="home__social">
-        <a href="https://www.linkedin.com/in/paulinerouger/" target="_blank" class="footer__social">
+        <a href="https://www.linkedin.com/in/paulinerouger/" target="_blank" class="home__social-icon">
           <i class="uil uil-linkedin-alt"></i>
         </a>
-        <a href="https://stackoverflow.com/users/16621883/paulinetw" target="_blank" class="footer__social">
+        <a href="https://stackoverflow.com/users/16621883/paulinetw" target="_blank" class="home__social-icon">
           <i class="fa fa-stack-overflow"></i>
         </a>
-        <a href="https://github.com/PaulineTW" target="_blank" class="footer__social">
+        <a href="https://github.com/PaulineTW" target="_blank" class="home__social-icon">
           <i class="uil uil-github-alt"></i>
         </a>
       </div>
@@ -107,9 +108,10 @@
 
       </div>
       <div class="home__data">
-        <h1 class="home__title">Welcome, I'm Pauline !</h1>
+        <h1 class="home__title">Bonjour, I'm Pauline !</h1>
+        <br>
         <h3 class="home__subtitle">Full-Stack Developer</h3>
-        <p class="home__description">High level experience in web application development and producing quality work. TO BE CHANGED
+        <p class="home__description">I enjoy turning complex problems into simple, beautiful and intuitive apps. When I'm not coding, you'll find me cooking, hiking or wild camping with my van.
         </p>
         <a href="#contact" class="button button--flex">
           Contact Me <i class="uil uil-message button__icon"></i>
@@ -666,7 +668,7 @@
                           <i class="uil uil-envelope contact__icon"></i>
                           <div>
                               <h3 class="contact__title">Email</h3>
-                              <span class="contact__subtitle">paulinerouge@hotmail.com</span>
+                              <span class="contact__subtitle"><a href="mailto:paulinerouge@hotmail.com">paulinerouge@hotmail.com</a></span>
                           </div>
                       </div>
 
@@ -679,7 +681,7 @@
                       </div>
                   </div>
 
-                  <form action="mailto:paulinerouge@hotmail.com" 
+                  <form name="contact" 
                   method="POST"
                   enctype="multipart/form-data"
                   name="EmailForm" 
@@ -704,11 +706,13 @@
                       </div>
                       
                       <div>
+                        <button type="submit" style="border: hidden;">
                           <a href="#" class="button button--flex">
-                              Send Message
-                              <!-- <input type=”submit” value=”Submit”>  -->
-                              <i class="uil uil-message button__icon"></i>
+                            Send Message
+                            <!-- <input type=”submit” value=”Submit”>  -->
+                            <i class="uil uil-message button__icon"></i>
                           </a>
+                        </button>
                       </div>
                   </form>
               </div>
@@ -753,7 +757,7 @@
             </div>
         </div>
 
-        <p class="footer__copy">Made by Pauline</p>
+        <p class="footer__copy">Pauline Rouger © 2022</p>
     </div>
 
 </footer>

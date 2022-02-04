@@ -91,6 +91,30 @@ body.dark-theme {
   color: var(--first-color);
 }
 
+/*========== Button Dark/Light ==========*/
+
+/* body {
+    --nav__logo: url(PR_logo.png) no-repeat;
+  
+  }
+  
+body[data-theme="change-theme"] {
+    --nav__logo: url(PR_logo_white.png) no-repeat;
+}
+
+.nav__logo {
+    background: var(--nav__logo);
+  } */
+
+/* .dark-theme a { 
+    color: #FFF;
+ } */
+
+.dark-theme .nav__logo {
+    fill: currentColor;
+    stroke: currentColor;
+}
+
 /*==================== BASE ====================*/
 * {
   box-sizing: border-box;
@@ -933,6 +957,14 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
 }
+
+.contact__subtitle a {
+    color: var(--text-color-light);
+}
+
+.contact__subtitle a:hover {
+    color: var(--small-font-size);
+  }
 
 .contact__content {
   background-color: var(--input-color);
