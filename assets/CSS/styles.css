@@ -110,6 +110,10 @@ body[data-theme="change-theme"] {
     color: #FFF;
  } */
 
+ svg {
+  fill: currentColor;
+}
+
 .dark-theme .nav__logo {
     fill: currentColor;
     stroke: currentColor;
