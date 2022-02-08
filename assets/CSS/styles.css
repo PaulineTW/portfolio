@@ -1,5 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
@@ -22,6 +23,7 @@
   --container-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -31,9 +33,11 @@
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
+
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
+
   /*========== Margenes Bottom ==========*/
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
@@ -43,12 +47,14 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
+
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
 }
 
+/*========== Responsive ==========*/
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3rem;
@@ -91,26 +97,7 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-/*========== Button Dark/Light ==========*/
-
-/* body {
-    --nav__logo: url(PR_logo.png) no-repeat;
-  
-  }
-  
-body[data-theme="change-theme"] {
-    --nav__logo: url(PR_logo_white.png) no-repeat;
-}
-
-.nav__logo {
-    background: var(--nav__logo);
-  } */
-
-/* .dark-theme a { 
-    color: #FFF;
- } */
-
- svg {
+svg {
   fill: currentColor;
 }
 
@@ -368,7 +355,6 @@ img {
   @keyframes blink {
     to {
       background: transparent;
-      /* visibility: hidden  */
     }
   }
   
@@ -390,7 +376,6 @@ img {
       color: teal;
     }
   }
-
  /* end  */ 
 
 .home__subtitle {
@@ -545,10 +530,6 @@ img {
   font-size: var(--h3-font-size);
 }
 
-/* .skills__subtitle {
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-} */
 
 .skills__arrow {
   margin-left: auto;
@@ -583,44 +564,6 @@ img {
 .skills__percentage {
   display: block;
   background-color: var(--first-color);
-}
-
-/* .skills__html {
-  width: 90%;
-}
-
-.skills__css {
-  width: 80%;
-}
-
-.skills__js {
-  width: 60%;
-}
-
-.skills__react {
-  width: 85%; */
-}
-
-
-/* .skills__node {
-  width: 70%;
-}
-
-.skills__rails {
-  width: 90%;
-} */
-
-
-/* .skills__bootstrap {
-  width: 90%;
-}
-
-.skills__git {
-  width: 85%;
-} */
-
-.skills__figma {
-  width: 85%;
 }
 
 .skills__close .skills__list {
