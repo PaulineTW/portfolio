@@ -791,70 +791,31 @@
         <span class="section__subtitle">Get in touch</span>
 
         <div class="contact__container container grid">
-            <div>
-                <div class="contact__information">
-                    <i class="uil uil-phone contact__icon"></i>
-                    <div>
-                        <h3 class="contact__title">Call Me</h3>
-                        <span class="contact__subtitle">+886-919484064</span>
-                    </div>
-                </div>
-
-                <div class="contact__information">
-                    <i class="uil uil-envelope contact__icon"></i>
-                    <div>
-                        <h3 class="contact__title">Email</h3>
-                        <span class="contact__subtitle"><a href="mailto:paulinerouge@hotmail.com">paulinerouge@hotmail.com</a></span>
-                    </div>
-                </div>
-
-                <div class="contact__information">
-                    <i class="uil uil-map-marker contact__icon"></i>
-                    <div>
-                        <h3 class="contact__title">Location</h3>
-                        <span class="contact__subtitle">Taipei, Taiwan</span>
-                    </div>
+          <div>
+            <div class="contact__information">
+                <i class="uil uil-phone contact__icon"></i>
+                <div>
+                    <h3 class="contact__title">Call Me</h3>
+                    <span class="contact__subtitle">+886-919484064</span>
                 </div>
             </div>
 
-            <!-- <form name="contact"
-            method="POST"
-            data-netlify="true"
-            enctype="multipart/form-data"
-            name="EmailForm"
-            class="contact__form grid">
-                <div class="contact__inputs grid">
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Name</label>
-                        <input type="text" name="name" class="contact__input">
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Email</label>
-                        <input type="email" name="email" class="contact__input">
-                    </div>
-                </div>
-                <div class="contact__content">
-                    <label for="" class="contact__label">Project</label>
-                    <input type="text" name="project" class="contact__input">
-                </div>
-                <div class="contact__content">
-                    <label for="" class="contact__label">Message</label>
-                    <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
-                </div>
-
+            <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
                 <div>
-                <button type="submit" style="border: hidden;">
-                    <a href="#" class="button button--flex">
-                    Send Message
-                    <i class="uil uil-message button__icon"></i>
-                    </a>
-                </button>
-                <button type="submit" class="button button--flex" style="border: hidden;">
-                    Send Message
-                    <i class="uil uil-message button__icon"></i>
-                </button>
+                    <h3 class="contact__title">Email</h3>
+                    <span class="contact__subtitle"><a href="mailto:paulinerouge@hotmail.com">paulinerouge@hotmail.com</a></span>
                 </div>
-            </form> -->
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+              <div>
+                  <h3 class="contact__title">Location</h3>
+                  <span class="contact__subtitle">Taipei, Taiwan</span>
+              </div>
+            </div>
+          </div>
 
           <form
           name="contact"
@@ -869,10 +830,11 @@
                 <label class="contact__label">Email <input type="email" name="email" class="contact__input" /></label>
               </div>
             </div>
-
             <div class="contact__content">
               <label class="contact__label">Message <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea></label>
             </div>
+
+            <div data-netlify-recaptcha="true"></div>
 
             <div>
               <button type="submit" class="button button--flex">Send message<i class="uil uil-message button__icon"></i></button>
@@ -880,10 +842,8 @@
           </form>
 
         </div>
-
     </section>
 </main>
-
 
   <!--==================== FOOTER ====================-->
   <footer class="footer">
