@@ -428,6 +428,7 @@ img {
   color: #FFF;
   padding: 1rem;
   border-radius: .5rem;
+  border: hidden;
   font-weight: var(--font-medium);
 }
 
