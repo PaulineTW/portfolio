@@ -6,7 +6,7 @@
   --header-height: 3rem;
   --typewriterSpeed: 6s;
   --typewriterCharacters: 23;
-  
+
   /*========== Colors ==========*/
   --hue-color: 166;
 
@@ -104,6 +104,10 @@ svg {
 .dark-theme .nav__logo {
     fill: currentColor;
     stroke: currentColor;
+}
+
+a {
+  color: var(--first-color);
 }
 
 /*==================== BASE ====================*/
@@ -317,7 +321,7 @@ img {
 .home__title {
   font-size: var(--big-font-size);
   position: relative;
-  width: max-content; 
+  width: max-content;
 }
 
 /* typewriter animation  */
@@ -351,32 +355,32 @@ img {
       left: 100%;
     }
   }
-  
+
   @keyframes blink {
     to {
       background: transparent;
     }
   }
-  
+
   @keyframes fadeInUp {
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
-  
+
   #yt-link {
     position: absolute;
     bottom: 2em;
     width: 100%;
     color: hsl(0 0 0 / 0.7);
-  
+
     &:hover,
     &:focus {
       color: teal;
     }
   }
- /* end  */ 
+ /* end  */
 
 .home__subtitle {
   font-size: var(--h3-font-size);
@@ -1000,16 +1004,16 @@ img {
     z-index: var(--z-tooltip);
     transition: .4s;
   }
-  
+
   .scrollup:hover {
     background-color: var(--first-color-alt);
   }
-  
+
   .scrollup__icon {
     font-size: 1.5rem;
     color: #FFF;
   }
-  
+
   /* Show scroll */
   .show-scroll {
     bottom: 5rem;
